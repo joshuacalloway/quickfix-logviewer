@@ -1,0 +1,20 @@
+
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "quickfix.logviewer.Main"
+
+sourceSets {
+  main {
+    java {
+      srcDir '.'
+    }
+  }
+}
+
+dependencies {
+  compile files('lib/quickfixj.jar')
+  compile files('lib/junit.jar')
+}
+
